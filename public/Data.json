@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "cover_img": "https://i.ibb.co/bsyDfYk/Course-1.png",
+        "title": "Introduction to C Programming",
+        "description": "This course introduces the fundamentals of C programming.",
+        "price": 15000,
+        "credit_hour": 1
+    },
+    {
+        "id": 2,
+        "cover_img": "https://i.ibb.co/LdbVxbr/Course-2.png",
+        "title": "Introduction to Algorithms",
+        "description": "Learn the basics of algorithm design and analysis.",
+        "price": 25000,
+        "credit_hour": 2
+    },
+    {
+        "id": 3,
+        "cover_img": "https://i.ibb.co/B2h72ZF/Course-3.png",
+        "title": "Introduction to C++ for DSA",
+        "description": "A comprehensive guide to C++ for data structures and algorithms.",
+        "price": 10000,
+        "credit_hour": 10
+    },
+    {
+        "id": 4,
+        "cover_img": "https://i.ibb.co/nsk33LC/Course-4.png",
+        "title": "Basic Data Structures",
+        "description": "Explore essential data structures and their applications.",
+        "price": 35000,
+        "credit_hour": 5
+    },
+    {
+        "id": 5,
+        "cover_img": "https://i.ibb.co/27ntkHq/Course-5.png",
+        "title": "Introduction to OOP Python",
+        "description": "Learn object-oriented programming in Python.",
+        "price": 19000,
+        "credit_hour": 5
+    },
+    {
+        "id": 6,
+        "cover_img": "https://i.ibb.co/FgM1kjg/Course-6.png",
+        "title": "Software Engineering",
+        "description": "Get a deep dive into software engineering principles and practices.",
+        "price": 23000,
+        "credit_hour": 2
+    },
+    {
+        "id": 7,
+        "cover_img": "https://i.ibb.co/f05j1ns/Course-7.png",
+        "title": "AWS, Cloud Computing",
+        "description": "Explore AWS and the world of cloud computing.",
+        "price": 35000,
+        "credit_hour": 5
+    },
+    {
+        "id": 8,
+        "cover_img": "https://i.ibb.co/TMm4Ykk/Course-8.png",
+        "title": "Database (MySQL)",
+        "description": "Learn the basics of MySQL database management.",
+        "price": 19000,
+        "credit_hour": 5
+    },
+    {
+        "id": 9,
+        "cover_img": "https://i.ibb.co/KwzBVjt/Course-9.png",
+        "title": "Problem-Solving Part",
+        "description": "Enhance your problem-solving skills with this course.",
+        "price": 23000,
+        "credit_hour": 2
+    }
+]
+
+
+
+
+
+
+
+
+
