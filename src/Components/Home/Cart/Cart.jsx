@@ -1,8 +1,8 @@
 
 
-const Cart = () => {
+const Cart = ({selectCourse}) => {
 
-    console.log()
+    console.log(selectCourse)
     return (
         <div>
             
