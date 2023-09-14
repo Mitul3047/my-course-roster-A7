@@ -8,10 +8,10 @@ function App() {
 
   return (
     <>
-      <header className='text-center text-4xl font-bold mt-12 mb-8'>
+      <header className='text-center text-4xl font-bold pt-12 mb-8'>
         <Header></Header>
       </header>
-      <main className='container md:px-3'>
+      <main className='container md:px-8'>
         <Home></Home>
       </main>
       {/* <footer></footer> */}

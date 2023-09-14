@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import Cart from "./Cart/Cart";
+import Cart from "../Cart/Cart";
 
 
 const Home = () => {
@@ -36,7 +36,7 @@ const Home = () => {
                                 <h2 className="card-title">{course.title}</h2>
                                 <p>{course.description}</p>
                             </div>
-                            <div className="">
+                            <div className="px-5">
                                 <div className="flex justify-between items-center">
                                     <p>Price: {course.price}</p>
                                     <p>Credit: {course.credit_hour} hr</p>
@@ -50,7 +50,6 @@ const Home = () => {
                 }
             </div>
             <div className="carts w-1/3 mx-auto">
-                <h1>Cart</h1>
                 <Cart selectCourse={selectCourse}></Cart>
             </div>
 
