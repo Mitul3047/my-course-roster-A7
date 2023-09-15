@@ -12,7 +12,7 @@ const Home = () => {
     const [hourRemain, setHourRemain] = useState(0)
     const [totalHour, setTotalHour] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
-    
+
 
     useEffect(() => {
         fetch('./Data.json')
@@ -46,12 +46,12 @@ const Home = () => {
                 setSelectCourse(selectNewCourse)
                 setTotalPrice(priceTotal)
 
-                
+
             }
-           
+
         }
 
-    }git
+    }
     const handleRemoveCourse = (courseToRemove) => {
         const updatedSelectCourse = selectCourse.filter(course => course.id !== courseToRemove.id);
         const removedHours = courseToRemove.credit_hour;
@@ -70,21 +70,36 @@ const Home = () => {
                 {
                     courses.map(course => (
                         <div key={course.id} className="card  bg-base-100 shadow-xl">
-                            <figure className="px-3 pt-10">
+                            <figure className="p-3">
                                 <img src={course.cover_img} alt="Shoes" className="rounded-xl w-full" />
                             </figure>
                             <div className="card-body items-start  ">
-                                <h2 className="card-title text-[#1C1B1B] text-lg font-semibold ">{course.title}</h2>
-                                <p className="text-sm text-[#1C1B1BCC] text-justify">{course.description}</p>
+                                <h2 className="card-title text-[#1C1B1B] text-lg font-semibold ">
+                                    {course.title}
+                                    </h2>
+                                <p className="text-sm text-[#1C1B1BCC] text-justify">
+                                    {course.description}
+                                    </p>
                             </div>
                             <div className="px-3">
                                 <div className="flex justify-between items-center pb-5 px-3">
-                                    <p><span className="inline-block items-center"><BsCurrencyDollar /></span> Price: {course.price}</p>
-                                    <p><span className="inline-block items-center"><BsBook /></span> Credit: {course.credit_hour} hr</p>
+                                    <p>
+                                        <span className="inline-block items-center">
+                                            <BsCurrencyDollar />
+                                        </span> Price: {course.price}
+                                    </p>
+                                    <p>
+                                        <span className="inline-block items-center">
+                                            <BsBook />
+                                        </span> Credit: {course.credit_hour} hr
+                                    </p>
                                 </div>
-                                <div className="card-actions pb-10 px-3">
-                                    <button onClick={() => handleSelect(course)} className="btn  bg-[#2F80ED] w-full hover:bg-slate-200 hover:text-black text-white">Select</button>
-                                
+                                <div className="card-actions pb-3 px-3">
+                                    <button onClick={() => handleSelect(course)}
+                                        className="btn  bg-[#2F80ED] w-full hover:bg-slate-200 hover:text-black text-white">
+                                        Select
+                                    </button>
+
                                 </div>
                             </div>
                         </div>
