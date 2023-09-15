@@ -73,11 +73,11 @@ const Home = () => {
                             <figure className="p-3">
                                 <img src={course.cover_img} alt={course.title} className="rounded-xl w-full" />
                             </figure>
-                            <div className="card-body items-start  ">
+                            <div className="px-3 items-start  ">
                                 <h2 className="card-title text-[#1C1B1B] text-lg font-semibold ">
                                     {course.title}
                                 </h2>
-                                <p className="text-sm text-[#1C1B1BCC] text-justify">
+                                <p className="text-sm h-40 text-[#1C1B1BCC] text-justify">
                                     {course.description}
                                 </p>
                             </div>
@@ -94,8 +94,8 @@ const Home = () => {
                                         </span> Credit: {course.credit_hour} hr
                                     </p>
                                 </div>
-                                <div className="card-actions pb-3 px-3">
-                                    <button onClick={() => handleSelect(course)}
+                                <div className=" pb-3">
+                                    <button  onClick={() => handleSelect(course)}
                                         className="btn  bg-[#2F80ED] w-full hover:bg-slate-200 hover:text-black text-white">
                                         Select
                                     </button>
