@@ -71,7 +71,7 @@ const Home = () => {
                     courses.map(course => (
                         <div key={course.id} className="card  bg-base-100 shadow-xl">
                             <figure className="p-3">
-                                <img src={course.cover_img} alt="Shoes" className="rounded-xl w-full" />
+                                <img src={course.cover_img} alt={course.title} className="rounded-xl w-full" />
                             </figure>
                             <div className="card-body items-start  ">
                                 <h2 className="card-title text-[#1C1B1B] text-lg font-semibold ">
