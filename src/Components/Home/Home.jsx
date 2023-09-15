@@ -81,7 +81,7 @@ const Home = () => {
                                     {course.description}
                                 </p>
                             </div>
-                            <div className="px-3">
+                            <div>
                                 <div className="flex justify-between items-center pb-5 px-3">
                                     <p>
                                         <span className="inline-block items-center">
@@ -94,7 +94,7 @@ const Home = () => {
                                         </span> Credit: {course.credit_hour} hr
                                     </p>
                                 </div>
-                                <div className=" pb-3">
+                                <div className=" pb-3 px-3">
                                     <button  onClick={() => handleSelect(course)}
                                         className="btn  bg-[#2F80ED] w-full hover:bg-slate-200 hover:text-black text-white">
                                         Select
