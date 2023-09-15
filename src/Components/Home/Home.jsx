@@ -76,10 +76,10 @@ const Home = () => {
                             <div className="card-body items-start  ">
                                 <h2 className="card-title text-[#1C1B1B] text-lg font-semibold ">
                                     {course.title}
-                                    </h2>
+                                </h2>
                                 <p className="text-sm text-[#1C1B1BCC] text-justify">
                                     {course.description}
-                                    </p>
+                                </p>
                             </div>
                             <div className="px-3">
                                 <div className="flex justify-between items-center pb-5 px-3">
