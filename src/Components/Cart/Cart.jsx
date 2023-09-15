@@ -4,7 +4,7 @@ const Cart = ({ selectCourse, hourRemain, totalHour, totalPrice,handleRemoveCour
 
 
     return (
-        <div className="bg-base-100 p-6 rounded-lg">
+        <div className="bg-base-100 p-6 rounded-lg shadow-xl">
             <h3 className="border-b-2 pb-4 text-[#2F80ED] text-lg font-bold">Credit Hour Remaining {hourRemain} hr</h3>
             <h3 className="text-[#1C1B1B] text-xl font-bold pt-4 pb-5">Course Name</h3>
             {

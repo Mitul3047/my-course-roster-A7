@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Cart from "../Cart/Cart";
 import { BsCurrencyDollar, BsBook } from 'react-icons/Bs';
+import toast from "react-hot-toast";
+
 
 
 const Home = () => {
@@ -10,7 +12,7 @@ const Home = () => {
     const [hourRemain, setHourRemain] = useState(0)
     const [totalHour, setTotalHour] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
-    const [removedList, setRemovedList] = useState([])
+    
 
     useEffect(() => {
         fetch('./Data.json')
@@ -22,7 +24,7 @@ const Home = () => {
         // console.log(course)
         const isExist = selectCourse.find(item => item.id == course.id)
         if (isExist) {
-            return alert('Has Been Enrolled')
+            toast.error('Course has already been enrolled');
         } else {
             let remainHour = course.credit_hour;
             let hourTotal = course.credit_hour;
@@ -36,7 +38,7 @@ const Home = () => {
 
             const totalHourRemain = 20 - remainHour
             if (remainHour > 20) {
-                alert('limit Crossed')
+                toast.error('Credit hour limit has been crossed');
             } else {
                 setTotalHour(hourTotal)
                 setHourRemain(totalHourRemain)
@@ -57,6 +59,7 @@ const Home = () => {
         setTotalHour(totalHour - removedHours);
         setHourRemain(hourRemain + removedHours);
         setTotalPrice(totalPrice - courseToRemove.price);
+        toast.success('Course has been removed')
     }
     // console.log(selectCourse)
     return (
@@ -66,7 +69,7 @@ const Home = () => {
             <div className="crads grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-3/4 mx-auto gap-6">
                 {
                     courses.map(course => (
-                        <div key={course.id} className="card  bg-gray-100 shadow-xl">
+                        <div key={course.id} className="card  bg-base-100 shadow-xl">
                             <figure className="px-3 pt-10">
                                 <img src={course.cover_img} alt="Shoes" className="rounded-xl w-full" />
                             </figure>
@@ -81,13 +84,14 @@ const Home = () => {
                                 </div>
                                 <div className="card-actions pb-10 px-3">
                                     <button onClick={() => handleSelect(course)} className="btn  bg-[#2F80ED] w-full hover:bg-slate-200 hover:text-black text-white">Select</button>
+                                
                                 </div>
                             </div>
                         </div>
                     ))
                 }
             </div>
-            <div className="carts  lg:w-1/4 mx-auto shadow-xl">
+            <div className="carts  lg:w-1/4 mx-auto ">
                 <Cart
                     hourRemain={hourRemain}
                     selectCourse={selectCourse}
