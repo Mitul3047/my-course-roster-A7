@@ -77,12 +77,12 @@ const Home = () => {
                                 <h2 className="card-title text-[#1C1B1B] text-lg font-semibold ">
                                     {course.title}
                                 </h2>
-                                <p className="text-sm h-40 text-[#1C1B1BCC] text-justify">
+                                <p className="text-sm md:h-40  text-[#1C1B1BCC] text-justify">
                                     {course.description}
                                 </p>
                             </div>
                             <div>
-                                <div className="flex justify-between items-center pb-5 px-3">
+                                <div className="flex justify-between items-center pb-5 pt-3 md:pt-0 px-3">
                                     <p>
                                         <span className="inline-block items-center">
                                             <BsCurrencyDollar />
