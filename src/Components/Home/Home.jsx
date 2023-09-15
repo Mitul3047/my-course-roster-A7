@@ -24,7 +24,7 @@ const Home = () => {
         // console.log(course)
         const isExist = selectCourse.find(item => item.id == course.id)
         if (isExist) {
-            toast.error('Course has already been enrolled');
+            return toast.error('Course has already been enrolled');
         } else {
             let remainHour = course.credit_hour;
             let hourTotal = course.credit_hour;
@@ -38,7 +38,7 @@ const Home = () => {
 
             const totalHourRemain = 20 - remainHour
             if (remainHour > 20) {
-                toast.error('Credit hour limit has been crossed');
+                return toast.error('Credit hour limit has been crossed');
             } else {
                 setTotalHour(hourTotal)
                 setHourRemain(totalHourRemain)
@@ -59,7 +59,7 @@ const Home = () => {
         setTotalHour(totalHour - removedHours);
         setHourRemain(hourRemain + removedHours);
         setTotalPrice(totalPrice - courseToRemove.price);
-        toast.success('Course has been removed')
+        return toast.success('Course has been removed')
     }
     // console.log(selectCourse)
     return (
