@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "cover_img": "https://example.com/item1.jpg",
+      "title": "Introduction to C Programming",
+      "description": "Dive into the world of programming with this introductory course on C programming. Learn the foundational concepts and principles of C programming, setting the stage for your journey into the world of computer programming.",
+      "price": 15000,
+      "credit_hour": 1
+    },
+    {
+      "id": 2,
+      "cover_img": "https://example.com/item2.jpg",
+      "title": "Introduction to Algorithms",
+      "description": "Master the art of algorithm design and analysis with this comprehensive course. Explore the fundamental algorithms and data structures that power modern computing, and gain the skills to solve complex computational problems.",
+      "price": 25000,
+      "credit_hour": 2
+    },
+    {
+      "id": 3,
+      "cover_img": "https://example.com/item3.jpg",
+      "title": "Introduction to C++ for DSA",
+      "description": "Prepare yourself for data structures and algorithms (DSA) with this in-depth guide to C++. Discover how C++ can be leveraged to implement and optimize various data structures and algorithms, setting you on the path to efficient problem-solving.",
+      "price": 10000,
+      "credit_hour": 10
+    },
+    {
+      "id": 4,
+      "cover_img": "https://example.com/item4.jpg",
+      "title": "Basic Data Structures",
+      "description": "Build a strong foundation in data structures with this course. Learn about essential data structures such as arrays, linked lists, stacks, and queues, and understand their applications in real-world scenarios.",
+      "price": 35000,
+      "credit_hour": 5
+    },
+    {
+      "id": 5,
+      "cover_img": "https://example.com/item5.jpg",
+      "title": "Introduction to OOP Python",
+      "description": "Unleash the power of object-oriented programming (OOP) with Python. Explore the principles of OOP and how they can be applied in Python, enabling you to design elegant and modular code.",
+      "price": 19000,
+      "credit_hour": 5
+    },
+    {
+      "id": 6,
+      "cover_img": "https://example.com/item6.jpg",
+      "title": "Software Engineering",
+      "description": "Delve into the world of software engineering with this comprehensive course. Learn software development methodologies, project management, and best practices that will help you create robust and maintainable software systems.",
+      "price": 23000,
+      "credit_hour": 2
+    },
+    {
+      "id": 7,
+      "cover_img": "https://example.com/item7.jpg",
+      "title": "AWS, Cloud Computing",
+      "description": "Embark on a journey into the cloud with Amazon Web Services (AWS). Discover the key services and concepts of cloud computing, and gain hands-on experience with AWS tools and technologies.",
+      "price": 35000,
+      "credit_hour": 5
+    },
+    {
+      "id": 8,
+      "cover_img": "https://example.com/item8.jpg",
+      "title": "Database (MySQL)",
+      "description": "Explore the realm of database management with MySQL. Learn how to design, create, and manage relational databases, and gain a solid understanding of SQL for data manipulation.",
+      "price": 19000,
+      "credit_hour": 5
+    },
+    {
+      "id": 9,
+      "cover_img": "https://example.com/item9.jpg",
+      "title": "Problem-Solving Part",
+      "description": "Sharpen your problem-solving skills with this course. Dive into various problem-solving techniques, algorithms, and strategies that will help you tackle complex challenges in the world of computing.",
+      "price": 23000,
+      "credit_hour": 2
+    }
+  ]
+  

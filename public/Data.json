@@ -3,7 +3,7 @@
         "id": 1,
         "cover_img": "https://i.ibb.co/bsyDfYk/Course-1.png",
         "title": "Introduction to C Programming",
-        "description": "This course introduces the fundamentals of C programming.",
+        "description": "Dive into the world of programming with this introductory course on C programming. Learn the foundational concepts and principles of C programming, setting the stage for your journey into the world of computer programming.",
         "price": 15000,
         "credit_hour": 1
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "cover_img": "https://i.ibb.co/LdbVxbr/Course-2.png",
         "title": "Introduction to Algorithms",
-        "description": "Learn the basics of algorithm design and analysis.",
+        "description": "Master the art of algorithm design and analysis with this comprehensive course. Explore the fundamental algorithms and data structures that power modern computing, and gain the skills to solve complex computational problems.",
         "price": 25000,
         "credit_hour": 2
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "cover_img": "https://i.ibb.co/B2h72ZF/Course-3.png",
         "title": "Introduction to C++ for DSA",
-        "description": "A comprehensive guide to C++ for data structures and algorithms.",
+        "description": "Prepare yourself for data structures and algorithms (DSA) with this in-depth guide to C++. Discover how C++ can be leveraged to implement and optimize various data structures and algorithms, setting you on the path to efficient problem-solving.",
         "price": 10000,
         "credit_hour": 10
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "cover_img": "https://i.ibb.co/nsk33LC/Course-4.png",
         "title": "Basic Data Structures",
-        "description": "Explore essential data structures and their applications.",
+        "description": "Build a strong foundation in data structures with this course. Learn about essential data structures such as arrays, linked lists, stacks, and queues, and understand their applications in real-world scenarios.",
         "price": 35000,
         "credit_hour": 5
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "cover_img": "https://i.ibb.co/27ntkHq/Course-5.png",
         "title": "Introduction to OOP Python",
-        "description": "Learn object-oriented programming in Python.",
+        "description": "Unleash the power of object-oriented programming (OOP) with Python. Explore the principles of OOP and how they can be applied in Python, enabling you to design elegant and modular code.",
         "price": 19000,
         "credit_hour": 5
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "cover_img": "https://i.ibb.co/FgM1kjg/Course-6.png",
         "title": "Software Engineering",
-        "description": "Get a deep dive into software engineering principles and practices.",
+        "description": "Delve into the world of software engineering with this comprehensive course. Learn software development methodologies, project management, and best practices that will help you create robust and maintainable software systems.",
         "price": 23000,
         "credit_hour": 2
     },
@@ -51,7 +51,7 @@
         "id": 7,
         "cover_img": "https://i.ibb.co/f05j1ns/Course-7.png",
         "title": "AWS, Cloud Computing",
-        "description": "Explore AWS and the world of cloud computing.",
+        "description": "Embark on a journey into the cloud with Amazon Web Services (AWS). Discover the key services and concepts of cloud computing, and gain hands-on experience with AWS tools and technologies.",
         "price": 35000,
         "credit_hour": 5
     },
@@ -59,7 +59,7 @@
         "id": 8,
         "cover_img": "https://i.ibb.co/TMm4Ykk/Course-8.png",
         "title": "Database (MySQL)",
-        "description": "Learn the basics of MySQL database management.",
+        "description": "Explore the realm of database management with MySQL. Learn how to design, create, and manage relational databases, and gain a solid understanding of SQL for data manipulation.",
         "price": 19000,
         "credit_hour": 5
     },
@@ -67,17 +67,8 @@
         "id": 9,
         "cover_img": "https://i.ibb.co/KwzBVjt/Course-9.png",
         "title": "Problem-Solving Part",
-        "description": "Enhance your problem-solving skills with this course.",
+        "description": "Sharpen your problem-solving skills with this course. Dive into various problem-solving techniques, algorithms, and strategies that will help you tackle complex challenges in the world of computing.",
         "price": 23000,
         "credit_hour": 2
     }
 ]
-
-
-
-
-
-
-
-
-

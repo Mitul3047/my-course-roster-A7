@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Cart from "../Cart/Cart";
+import { BsCurrencyDollar, BsBook } from 'react-icons/Bs';
 
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
     const [selectCourse, setSelectCourse] = useState([])
     const [hourRemain, setHourRemain] = useState(0)
     const [totalHour, setTotalHour] = useState(0)
-    const [totalPrice, setTotalPrice ] = useState(0)
+    const [totalPrice, setTotalPrice] = useState(0)
 
     useEffect(() => {
         fetch('./Data.json')
@@ -29,9 +30,9 @@ const Home = () => {
                 remainHour += item.credit_hour;
                 hourTotal += item.credit_hour;
                 priceTotal += item.price
-                
+
             });
-            
+
             const totalHourRemain = 20 - remainHour
             if (remainHour > 20) {
                 alert('limit Crossed')
@@ -50,31 +51,31 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-6">
 
 
-            <div className="crads grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-2/3 mx-auto gap-6">
+            <div className="crads grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-3/4 mx-auto gap-6">
                 {
                     courses.map(course => (
                         <div key={course.id} className="card  bg-gray-100 shadow-xl">
-                            <figure className="px-5 pt-10">
+                            <figure className="px-3 pt-10">
                                 <img src={course.cover_img} alt="Shoes" className="rounded-xl w-full" />
                             </figure>
-                            <div className="card-body items-center text-center ">
-                                <h2 className="card-title">{course.title}</h2>
-                                <p>{course.description}</p>
+                            <div className="card-body items-start  ">
+                                <h2 className="card-title text-[#1C1B1B] text-lg font-semibold ">{course.title}</h2>
+                                <p className="text-sm text-[#1C1B1BCC] text-justify">{course.description}</p>
                             </div>
-                            <div className="px-5">
-                                <div className="flex justify-between items-center p-5">
-                                    <p>Price: {course.price}</p>
-                                    <p>Credit: {course.credit_hour} hr</p>
+                            <div className="px-3">
+                                <div className="flex justify-between items-center pb-5 px-3">
+                                    <p><span className="inline-block items-center"><BsCurrencyDollar /></span>Price: {course.price}</p>
+                                    <p><span className="inline-block items-center"><BsBook/></span>Credit: {course.credit_hour} hr</p>
                                 </div>
-                                <div className="card-actions pb-10 px-5">
-                                    <button onClick={() => handleSelect(course)} className="btn  bg-sky-500 w-full hover:bg-slate-200 hover:text-black text-white">Select</button>
+                                <div className="card-actions pb-10 px-3">
+                                    <button onClick={() => handleSelect(course)} className="btn  bg-[#2F80ED] w-full hover:bg-slate-200 hover:text-black text-white">Select</button>
                                 </div>
                             </div>
                         </div>
                     ))
                 }
             </div>
-            <div className="carts  lg:w-1/3 mx-auto ">
+            <div className="carts  lg:w-1/4 mx-auto ">
                 <Cart
                     hourRemain={hourRemain}
                     selectCourse={selectCourse}
