@@ -24,7 +24,7 @@ I Personally ADDED 2 NEW FEATURES, THEY ARE :-
 1. It Can Remove items from Cart and re-Calculate the total of (price, Credit hour , and the remaining hours also)
 2. It also shows alert when a item is removed from the cart 
 
-
+------------------------------------------------------------------------------
 
 Discussing how you managed the state in my assignment project :-
 
