@@ -10,6 +10,7 @@ const Home = () => {
     const [hourRemain, setHourRemain] = useState(0)
     const [totalHour, setTotalHour] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
+    const [removedList, setRemovedList] = useState([])
 
     useEffect(() => {
         fetch('./Data.json')
@@ -42,9 +43,20 @@ const Home = () => {
                 const selectNewCourse = [...selectCourse, course]
                 setSelectCourse(selectNewCourse)
                 setTotalPrice(priceTotal)
+
+                
             }
+           
         }
 
+    }
+    const handleRemoveCourse = (courseToRemove) => {
+        const updatedSelectCourse = selectCourse.filter(course => course.id !== courseToRemove.id);
+        const removedHours = courseToRemove.credit_hour;
+        setSelectCourse(updatedSelectCourse);
+        setTotalHour(totalHour - removedHours);
+        setHourRemain(hourRemain + removedHours);
+        setTotalPrice(totalPrice - courseToRemove.price);
     }
     // console.log(selectCourse)
     return (
@@ -64,8 +76,8 @@ const Home = () => {
                             </div>
                             <div className="px-3">
                                 <div className="flex justify-between items-center pb-5 px-3">
-                                    <p><span className="inline-block items-center"><BsCurrencyDollar /></span>Price: {course.price}</p>
-                                    <p><span className="inline-block items-center"><BsBook/></span>Credit: {course.credit_hour} hr</p>
+                                    <p><span className="inline-block items-center"><BsCurrencyDollar /></span> Price: {course.price}</p>
+                                    <p><span className="inline-block items-center"><BsBook /></span> Credit: {course.credit_hour} hr</p>
                                 </div>
                                 <div className="card-actions pb-10 px-3">
                                     <button onClick={() => handleSelect(course)} className="btn  bg-[#2F80ED] w-full hover:bg-slate-200 hover:text-black text-white">Select</button>
@@ -75,12 +87,13 @@ const Home = () => {
                     ))
                 }
             </div>
-            <div className="carts  lg:w-1/4 mx-auto ">
+            <div className="carts  lg:w-1/4 mx-auto shadow-xl">
                 <Cart
                     hourRemain={hourRemain}
                     selectCourse={selectCourse}
                     totalHour={totalHour}
-                    totalPrice={totalPrice}></Cart>
+                    totalPrice={totalPrice}
+                    handleRemoveCourse={handleRemoveCourse}></Cart>
             </div>
 
 

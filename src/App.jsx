@@ -11,7 +11,7 @@ function App() {
       <header className='text-center text-4xl font-bold pt-12 mb-8'>
         <Header></Header>
       </header>
-      <main className='container '>
+      <main className='container px-8 pb-14'>
         <Home></Home>
       </main>
       {/* <footer></footer> */}
