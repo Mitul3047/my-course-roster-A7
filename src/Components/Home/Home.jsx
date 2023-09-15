@@ -51,7 +51,7 @@ const Home = () => {
            
         }
 
-    }
+    }git
     const handleRemoveCourse = (courseToRemove) => {
         const updatedSelectCourse = selectCourse.filter(course => course.id !== courseToRemove.id);
         const removedHours = courseToRemove.credit_hour;
