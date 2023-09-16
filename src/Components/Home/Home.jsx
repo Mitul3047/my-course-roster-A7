@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 const Home = () => {
     const [courses, setCourses] = useState([])
     const [selectCourse, setSelectCourse] = useState([])
-    const [hourRemain, setHourRemain] = useState(0)
+    const [hourRemain, setHourRemain] = useState(20)
     const [totalHour, setTotalHour] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
 

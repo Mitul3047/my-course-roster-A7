@@ -29,8 +29,8 @@ const Cart = ({ selectCourse, hourRemain, totalHour, totalPrice, handleRemoveCou
 Cart.propTypes = {
     hourRemain: PropTypes.number,
     selectCourse: PropTypes.array,
-    totalHour: PropTypes.array,
-    totalPrice: PropTypes.array,
+    totalHour: PropTypes.number,
+    totalPrice: PropTypes.number,
     handleRemoveCourse: PropTypes.func
 
 }
